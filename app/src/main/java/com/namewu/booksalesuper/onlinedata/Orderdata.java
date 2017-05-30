@@ -1,5 +1,6 @@
 package com.namewu.booksalesuper.onlinedata;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import cn.bmob.v3.BmobObject;
@@ -8,7 +9,7 @@ import cn.bmob.v3.BmobObject;
  * Created by Administrator on 2017/3/17.
  */
 
-public class Orderdata extends BmobObject {
+public class Orderdata extends BmobObject implements Serializable{
     private String name;
     private String sex;
     private String phone;
@@ -18,7 +19,7 @@ public class Orderdata extends BmobObject {
     private String allmoney;
     private String doid;
     private String submitid;
-
+    public Orderdata(){}
     public Orderdata(String name, String sex, String phone, boolean status, String address,
                      ArrayList<String> list_info, String allmoney, String doid, String submitid) {
         this.name = name;

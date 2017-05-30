@@ -10,18 +10,9 @@
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="我的订单"
+            android:text="订单"
             android:layout_gravity="center"
             android:theme="@style/title_font"/>
-        <TextView
-            android:id="@+id/activity_orderbuy_add"
-            android:layout_marginLeft="8dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:theme="@style/bottom_titil_font"
-            android:text="更改信息"/>
         <TextView
             android:id="@+id/activity_orderbuy_ok"
             android:layout_marginRight="8dp"
@@ -30,15 +21,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:theme="@style/bottom_titil_font"
-            android:text="提交"/>
+            android:text="处理"/>
     </RelativeLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@mipmap/bg_homemoviea"
             android:orientation="vertical"
             android:padding="30dp">
@@ -178,6 +166,34 @@
                     android:textColor="@color/red"
                     android:text="￥ 200.00"/>
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="6dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:text="处理管理员"/>
+                <TextView
+                    android:id="@+id/activity_orderbuy_superuser"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="italic"
+                    android:textSize="14sp"
+                    android:gravity="right"
+                    android:textColor="@color/red"
+                    android:text="暂未处理"/>
+            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
 </LinearLayout>

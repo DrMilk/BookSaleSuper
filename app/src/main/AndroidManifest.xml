@@ -49,6 +49,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".main.MainActivity"/>
+        <activity android:name=".main.DetailOrderActivity"/>
     </application>
 
 </manifest>
