@@ -13,7 +13,7 @@
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="用户登录"
+            android:text="管理员登录"
             android:layout_gravity="center"
             android:theme="@style/title_font"/>
     </RelativeLayout>
